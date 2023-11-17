@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@configs/*": ["./src/configs/*"],
+      "@routers/*": ["./src/routers/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@services/*": ["./src/services/*"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@errors/*": ["./src/errors/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@protocols/*": ["./src/protocols/*"],
+      "@src/*": ["./src/*"],
+      "@tests/factories/*": ["./tests/factories/*"]
+    }
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
