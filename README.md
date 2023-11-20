@@ -1,5 +1,41 @@
-# project-template-nodejs
+# Node.js Project Template
 My basis for creating back-end projects with Node.js 18
+
+# Demo
+#### Use API deploy: https://sampledb-w8v2.onrender.com/
+
+<sub/>PS:the `/health` route to test whether the project is running.</sub>
+
+
+# How does this work?
+This project is a REST API template that will help you create new projects. It has only one entity: `messages`. The characteristics of this entity are in the file `./prisma/schema.prisma`.
+
+A route has been created for the entity:
+
+- GET `/messages`: Returns all registered messages.
+```ts
+[
+  {
+    "id": number
+    "text": string
+  }
+  (...)
+]
+```
+
+# Motivation
+This project was designed to facilitate the construction of a REST API using the Node and Express ecosystem with TypeScript, Prisma and automated testing technologies.
+
+# Technologies used
+For this project, we used:
+
+- Node (version 18.17.0);
+- Express;
+- TypeScript;
+- Joi;
+- Prisma;
+- Postgres;
+- Jest and Supertest;
 
 ## How to run for development
 
